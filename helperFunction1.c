@@ -114,7 +114,7 @@ void waitChildprocess(int *stat)
  * @delim: Delimiter string
  * Return: Array of tokens
  */
-char    **funcTokenize(char *str, char *delim)
+char **funcTokenize(char *str, char *delim)
 {
     int     amount;
     char    *token;
