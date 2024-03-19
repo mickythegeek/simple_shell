@@ -1,6 +1,5 @@
 #include "shell.h"
 
-
 /**
  * funcExitStatus - Handle exit status in shell
  * @stat: Exit status value
@@ -11,7 +10,6 @@
  * Description: This function handles the exit status in the shell.
  * It checks the exit status value and takes appropriate actions based on it.
  */
-
 
 void funcExitStatus(int stat, char **args, char **token, int *status)
 {
@@ -28,11 +26,6 @@ void funcExitStatus(int stat, char **args, char **token, int *status)
     }
 }
 
-
-
-
-
-
 /**
  * exitCustom - Handle custom exit in shell
  * @stat: Exit status value
@@ -41,9 +34,8 @@ void funcExitStatus(int stat, char **args, char **token, int *status)
  * @status: Pointer to status variable
  *
  * Description: This function handles a custom exit in the shell.
- * It checks the exit status value and takes appropriate actions based on it.
+ *
  */
-
 
 void exitCustom(int stat, char **args, char *prompt, int *status)
 {
@@ -60,7 +52,6 @@ void exitCustom(int stat, char **args, char *prompt, int *status)
     }
 }
 
-
 /**
  * getPromptFail - Handle failure in getting command prompt
  * @prompt: Pointer to command prompt
@@ -71,7 +62,6 @@ void exitCustom(int stat, char **args, char *prompt, int *status)
  * allocated memory, and exits with failure status.
  */
 
-
 void getPromptFail(char *prompt)
 {
     perror("getline");
@@ -79,7 +69,6 @@ void getPromptFail(char *prompt)
     prompt = NULL;
     exit(EXIT_FAILURE);
 }
-
 
 /**
  * printEnviron - Print environment variables to standard output
@@ -90,7 +79,6 @@ void getPromptFail(char *prompt)
 void printEnviron(void)
 {
     char **env;
-
 
     env = environ;
     while (*env != NULL)
