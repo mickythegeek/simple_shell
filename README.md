@@ -1,4 +1,3 @@
-
 # Simple Shell Project
 
 ## Introduction
@@ -20,37 +19,33 @@ Check out the [AUTHORS](AUTHORS) file to see all contributors to this project.i
 
 To get started with the Simple Shell Project, follow these steps:
 
-1. Clone the Repository:**
+1. Clone the Repository:\*\*
 
 git clone <repository_url>
-
 
 2. **Navigate to the Project Directory:**
 
 cd simple-shell-project
 
-
 3. **Compile the Program:**
 
 gcc -o shell shell.c
-
 
 4. **Run the Shell:**
 
 ./shell
 
-
 ## Usage
 
 1. **Enter Commands:**
 
-kel$Afia$ ls
+myshell$ ls
 
 Enter any valid shell command after the prompt and press Enter to execute it.
 
 2. **Exit the Shell:**
 
-kel$Afia$ exit
+myshell$ exit
 
 To exit the shell, simply type `exit` and press Enter.
 

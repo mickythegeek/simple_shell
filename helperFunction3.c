@@ -12,7 +12,7 @@
  */
 ssize_t readUserInput(char **args, size_t *size_args)
 {
-	write(STDOUT_FILENO, "myshell$ ", 11);
+	write(STDOUT_FILENO, "myshell$ ", 10);
 	return (getline(args, size_args, stdin));
 }
 

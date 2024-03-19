@@ -1,11 +1,10 @@
 #include <stdio.h>
-/*
- * main - prints a text
- * Return: 0
+/**
+ * main - Entry point for code
+ * Return : Returns 0 always
  */
-
 void main(void)
 {
-	printf("Hello World");
+	printf("Hello world");
 	return (0);
 }

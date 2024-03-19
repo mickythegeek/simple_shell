@@ -13,17 +13,17 @@
 
 void funcExitStatus(int stat, char **args, char **token, int *status)
 {
-    if (stat == -1 || (stat == 0 && args[1][0] != '0') || stat < 0)
-    {
-        writeExitError(args[1]);
-        *status = 2;
-    }
-    else
-    {
-        free(*token);
-        freeArgs(args);
-        exit(stat);
-    }
+	if (stat == -1 || (stat == 0 && args[1][0] != '0') || stat < 0)
+	{
+		writeExitError(args[1]);
+		*status = 2;
+	}
+	else
+	{
+		free(*token);
+		freeArgs(args);
+		exit(stat);
+	}
 }
 
 /**
@@ -34,22 +34,22 @@ void funcExitStatus(int stat, char **args, char **token, int *status)
  * @status: Pointer to status variable
  *
  * Description: This function handles a custom exit in the shell.
- *
+ * It checks the exit status value and takes appropriate actions based on it.
  */
 
 void exitCustom(int stat, char **args, char *prompt, int *status)
 {
-    if (stat == -1 || (stat == 0 && args[1][0] != '0') || stat < 0)
-    {
-        writeExitError(args[1]);
-        *status = 2;
-    }
-    else
-    {
-        free(prompt);
-        freeArgs(args);
-        exit(stat);
-    }
+	if (stat == -1 || (stat == 0 && args[1][0] != '0') || stat < 0)
+	{
+		writeExitError(args[1]);
+		*status = 2;
+	}
+	else
+	{
+		free(prompt);
+		freeArgs(args);
+		exit(stat);
+	}
 }
 
 /**
@@ -64,10 +64,10 @@ void exitCustom(int stat, char **args, char *prompt, int *status)
 
 void getPromptFail(char *prompt)
 {
-    perror("getline");
-    free(prompt);
-    prompt = NULL;
-    exit(EXIT_FAILURE);
+	perror("getline");
+	free(prompt);
+	prompt = NULL;
+	exit(EXIT_FAILURE);
 }
 
 /**
@@ -78,13 +78,13 @@ void getPromptFail(char *prompt)
  */
 void printEnviron(void)
 {
-    char **env;
+	char **env;
 
-    env = environ;
-    while (*env != NULL)
-    {
-        write(STDOUT_FILENO, *env, strlen(*env));
-        write(STDOUT_FILENO, "\n", 1);
-        env++;
-    }
+	env = environ;
+	while (*env != NULL)
+	{
+		write(STDOUT_FILENO, *env, strlen(*env));
+		write(STDOUT_FILENO, "\n", 1);
+		env++;
+	}
 }
