@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to the Simple Shell Project! This project aims to create a basic shell program where users can enter commands for execution. The shell will parse these commands, execute them in child processes, and display the results to the user. This project is a collaborative effort between you and your collaborator Afia.
+Welcome to the Simple Shell Project! This project aims to create a basic shell program where users can enter commands for execution. The shell will parse these commands, execute them in child processes, and display the results to the user. This project is a collaborative effort between Muslim Bello and your collaborator Afia.
 
 ## Features
 
